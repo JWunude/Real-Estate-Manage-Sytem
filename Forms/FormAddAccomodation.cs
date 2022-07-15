@@ -19,7 +19,7 @@ namespace Lems.Forms
         SqlConnection conHelper = new SqlConnection(Helper.ConnectionString);
 
         public string strACID, strAcDescription, strPropID, strACNumber, strAmtPerMonth, strAmtPerYear, strACStatus, strRemarks;
-        static double monthlyPayment = 0;
+        static double yearlyPayment = 0;
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -263,10 +263,7 @@ namespace Lems.Forms
         private void txtMontlyPayment__TextChanged(object sender, EventArgs e)
         {
 
-            if (double.TryParse(txtMontlyPayment.Texts,out monthlyPayment))
-            {
-                txtYearlyPayment.Texts = (monthlyPayment * 12).ToString();
-            }
+           //Code was moved to txtYearlyPayment_TextChanged Event.
             
         }
 
@@ -280,6 +277,14 @@ namespace Lems.Forms
             else
             {
                 errorProvider1.SetError(txtYearlyPayment, "");
+            }
+        }
+
+        private void txtYearlyPayment__TextChanged(object sender, EventArgs e)
+        {
+            if (double.TryParse(txtYearlyPayment.Texts, out yearlyPayment))
+            {
+                txtMontlyPayment.Texts =Math.Round((yearlyPayment / 12),0,MidpointRounding.AwayFromZero).ToString();
             }
         }
 

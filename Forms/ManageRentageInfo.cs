@@ -103,5 +103,10 @@ namespace Lems.Forms
                 return;
             }
         }
+
+        private void btnPrintReceipt_Click(object sender, EventArgs e)
+        {
+            new Reports.FormTenantReceipt().Show();
+        }
     }
 }

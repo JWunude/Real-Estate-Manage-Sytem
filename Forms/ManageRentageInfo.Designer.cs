@@ -39,12 +39,6 @@ namespace Lems.Forms
             this.panelDisplayProperty = new System.Windows.Forms.Panel();
             this.lblPID = new System.Windows.Forms.Label();
             this.dgvDisplayRentageInfo = new System.Windows.Forms.DataGridView();
-            this.txtSearch = new RJCodeAdvance.RJControls.RJTextBox();
-            this.btnSearch = new FontAwesome.Sharp.IconButton();
-            this.btnAddNew = new FontAwesome.Sharp.IconButton();
-            this.panelTop = new System.Windows.Forms.Panel();
-            this.btnExit = new FontAwesome.Sharp.IconButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.RID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,6 +54,13 @@ namespace Lems.Forms
             this.TenancyStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Remakrs = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Comments = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtSearch = new RJCodeAdvance.RJControls.RJTextBox();
+            this.btnSearch = new FontAwesome.Sharp.IconButton();
+            this.btnAddNew = new FontAwesome.Sharp.IconButton();
+            this.panelTop = new System.Windows.Forms.Panel();
+            this.btnExit = new FontAwesome.Sharp.IconButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnPrintReceipt = new FontAwesome.Sharp.IconButton();
             this.panelDisplayProperty.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisplayRentageInfo)).BeginInit();
             this.panelTop.SuspendLayout();
@@ -75,6 +76,7 @@ namespace Lems.Forms
             this.panelDisplayProperty.Controls.Add(this.dgvDisplayRentageInfo);
             this.panelDisplayProperty.Controls.Add(this.txtSearch);
             this.panelDisplayProperty.Controls.Add(this.btnSearch);
+            this.panelDisplayProperty.Controls.Add(this.btnPrintReceipt);
             this.panelDisplayProperty.Controls.Add(this.btnAddNew);
             this.panelDisplayProperty.Location = new System.Drawing.Point(12, 75);
             this.panelDisplayProperty.Name = "panelDisplayProperty";
@@ -84,7 +86,7 @@ namespace Lems.Forms
             // lblPID
             // 
             this.lblPID.AutoSize = true;
-            this.lblPID.Location = new System.Drawing.Point(1090, 22);
+            this.lblPID.Location = new System.Drawing.Point(1099, 10);
             this.lblPID.Name = "lblPID";
             this.lblPID.Size = new System.Drawing.Size(35, 13);
             this.lblPID.TabIndex = 3;
@@ -145,115 +147,6 @@ namespace Lems.Forms
             this.dgvDisplayRentageInfo.Size = new System.Drawing.Size(1510, 677);
             this.dgvDisplayRentageInfo.TabIndex = 2;
             this.dgvDisplayRentageInfo.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDisplayRentageInfo_CellClick);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.BackColor = System.Drawing.SystemColors.Window;
-            this.txtSearch.BorderColor = System.Drawing.Color.Indigo;
-            this.txtSearch.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtSearch.BorderRadius = 0;
-            this.txtSearch.BorderSize = 2;
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtSearch.Location = new System.Drawing.Point(1128, 19);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSearch.Multiline = false;
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSearch.PasswordChar = false;
-            this.txtSearch.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSearch.PlaceholderText = "";
-            this.txtSearch.Size = new System.Drawing.Size(354, 35);
-            this.txtSearch.TabIndex = 1;
-            this.txtSearch.Texts = "";
-            this.txtSearch.UnderlinedStyle = false;
-            this.txtSearch._TextChanged += new System.EventHandler(this.txtSearch__TextChanged);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearch.BackColor = System.Drawing.Color.White;
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.Indigo;
-            this.btnSearch.FlatAppearance.BorderSize = 2;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.Indigo;
-            this.btnSearch.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.btnSearch.IconColor = System.Drawing.Color.Indigo;
-            this.btnSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSearch.IconSize = 35;
-            this.btnSearch.Location = new System.Drawing.Point(1479, 19);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(40, 35);
-            this.btnSearch.TabIndex = 0;
-            this.btnSearch.UseVisualStyleBackColor = false;
-            // 
-            // btnAddNew
-            // 
-            this.btnAddNew.BackColor = System.Drawing.Color.Indigo;
-            this.btnAddNew.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddNew.FlatAppearance.BorderColor = System.Drawing.Color.Indigo;
-            this.btnAddNew.FlatAppearance.BorderSize = 0;
-            this.btnAddNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddNew.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddNew.ForeColor = System.Drawing.Color.White;
-            this.btnAddNew.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.btnAddNew.IconColor = System.Drawing.Color.GhostWhite;
-            this.btnAddNew.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAddNew.IconSize = 32;
-            this.btnAddNew.Location = new System.Drawing.Point(9, 12);
-            this.btnAddNew.Name = "btnAddNew";
-            this.btnAddNew.Size = new System.Drawing.Size(151, 42);
-            this.btnAddNew.TabIndex = 0;
-            this.btnAddNew.Text = "Take New Rent";
-            this.btnAddNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddNew.UseVisualStyleBackColor = false;
-            this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
-            // 
-            // panelTop
-            // 
-            this.panelTop.BackColor = System.Drawing.Color.Indigo;
-            this.panelTop.Controls.Add(this.btnExit);
-            this.panelTop.Controls.Add(this.label1);
-            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1573, 50);
-            this.panelTop.TabIndex = 2;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnExit.IconColor = System.Drawing.Color.Silver;
-            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 30;
-            this.btnExit.Location = new System.Drawing.Point(1535, 15);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(36, 36);
-            this.btnExit.TabIndex = 6;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(615, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(350, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "View  / Manage Rentage Information";
             // 
             // btnEdit
             // 
@@ -403,6 +296,137 @@ namespace Lems.Forms
             this.Comments.ReadOnly = true;
             this.Comments.Width = 200;
             // 
+            // txtSearch
+            // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.BackColor = System.Drawing.SystemColors.Window;
+            this.txtSearch.BorderColor = System.Drawing.Color.Indigo;
+            this.txtSearch.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtSearch.BorderRadius = 0;
+            this.txtSearch.BorderSize = 2;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSearch.Location = new System.Drawing.Point(1137, 7);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearch.Multiline = false;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSearch.PasswordChar = false;
+            this.txtSearch.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSearch.PlaceholderText = "";
+            this.txtSearch.Size = new System.Drawing.Size(354, 35);
+            this.txtSearch.TabIndex = 1;
+            this.txtSearch.Texts = "";
+            this.txtSearch.UnderlinedStyle = false;
+            this.txtSearch._TextChanged += new System.EventHandler(this.txtSearch__TextChanged);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearch.BackColor = System.Drawing.Color.White;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.Indigo;
+            this.btnSearch.FlatAppearance.BorderSize = 2;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.Indigo;
+            this.btnSearch.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnSearch.IconColor = System.Drawing.Color.Indigo;
+            this.btnSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSearch.IconSize = 35;
+            this.btnSearch.Location = new System.Drawing.Point(1488, 7);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(40, 35);
+            this.btnSearch.TabIndex = 0;
+            this.btnSearch.UseVisualStyleBackColor = false;
+            // 
+            // btnAddNew
+            // 
+            this.btnAddNew.BackColor = System.Drawing.Color.Indigo;
+            this.btnAddNew.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddNew.FlatAppearance.BorderColor = System.Drawing.Color.Indigo;
+            this.btnAddNew.FlatAppearance.BorderSize = 0;
+            this.btnAddNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNew.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNew.ForeColor = System.Drawing.Color.White;
+            this.btnAddNew.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.btnAddNew.IconColor = System.Drawing.Color.GhostWhite;
+            this.btnAddNew.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAddNew.IconSize = 32;
+            this.btnAddNew.Location = new System.Drawing.Point(9, 12);
+            this.btnAddNew.Name = "btnAddNew";
+            this.btnAddNew.Size = new System.Drawing.Size(151, 42);
+            this.btnAddNew.TabIndex = 0;
+            this.btnAddNew.Text = "Take New Rent";
+            this.btnAddNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddNew.UseVisualStyleBackColor = false;
+            this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
+            // 
+            // panelTop
+            // 
+            this.panelTop.BackColor = System.Drawing.Color.Indigo;
+            this.panelTop.Controls.Add(this.btnExit);
+            this.panelTop.Controls.Add(this.label1);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(1573, 50);
+            this.panelTop.TabIndex = 2;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnExit.IconColor = System.Drawing.Color.Silver;
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 30;
+            this.btnExit.Location = new System.Drawing.Point(1535, 15);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(36, 36);
+            this.btnExit.TabIndex = 6;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(615, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(350, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "View  / Manage Rentage Information";
+            // 
+            // btnPrintReceipt
+            // 
+            this.btnPrintReceipt.BackColor = System.Drawing.Color.Indigo;
+            this.btnPrintReceipt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrintReceipt.FlatAppearance.BorderColor = System.Drawing.Color.Indigo;
+            this.btnPrintReceipt.FlatAppearance.BorderSize = 0;
+            this.btnPrintReceipt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrintReceipt.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrintReceipt.ForeColor = System.Drawing.Color.White;
+            this.btnPrintReceipt.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.btnPrintReceipt.IconColor = System.Drawing.Color.GhostWhite;
+            this.btnPrintReceipt.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPrintReceipt.IconSize = 32;
+            this.btnPrintReceipt.Location = new System.Drawing.Point(166, 12);
+            this.btnPrintReceipt.Name = "btnPrintReceipt";
+            this.btnPrintReceipt.Size = new System.Drawing.Size(151, 42);
+            this.btnPrintReceipt.TabIndex = 0;
+            this.btnPrintReceipt.Text = "Print Receipt";
+            this.btnPrintReceipt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPrintReceipt.UseVisualStyleBackColor = false;
+            this.btnPrintReceipt.Click += new System.EventHandler(this.btnPrintReceipt_Click);
+            // 
             // ManageRentageInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -449,5 +473,6 @@ namespace Lems.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn TenancyStatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn Remakrs;
         private System.Windows.Forms.DataGridViewTextBoxColumn Comments;
+        private FontAwesome.Sharp.IconButton btnPrintReceipt;
     }
 }

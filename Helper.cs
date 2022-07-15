@@ -19,7 +19,9 @@ namespace Lems
 
         //SqlConnection con = new SqlConnection(Helper.ConnectionString);
     }
-    class Connection
+
+    
+    public class Connection
     {
         public SqlConnection con;
         public SqlCommand cmd;

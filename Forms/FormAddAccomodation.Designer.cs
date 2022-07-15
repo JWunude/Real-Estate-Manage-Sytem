@@ -38,20 +38,20 @@ namespace Lems.Forms
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.txtMontlyPayment = new RJCodeAdvance.RJControls.RJTextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtACID = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtPropID = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtACNumber = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtMontlyPayment = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtYearlyPayment = new RJCodeAdvance.RJControls.RJTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cboACDescription = new System.Windows.Forms.ComboBox();
             this.cboACStatus = new System.Windows.Forms.ComboBox();
             this.txtGeneralRemarks = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtYearlyPayment = new RJCodeAdvance.RJControls.RJTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panelTitleBar.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -146,20 +146,20 @@ namespace Lems.Forms
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.txtMontlyPayment, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.label8, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.txtACID, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtPropID, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtACNumber, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.txtMontlyPayment, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.txtYearlyPayment, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.cboACDescription, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.cboACStatus, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.txtGeneralRemarks, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.txtYearlyPayment, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 5);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 10);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
@@ -202,6 +202,47 @@ namespace Lems.Forms
             this.label3.Text = "Property ID:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 162);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(189, 39);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Amount Per Year :";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtMontlyPayment
+            // 
+            this.txtMontlyPayment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtMontlyPayment.BackColor = System.Drawing.SystemColors.Window;
+            this.txtMontlyPayment.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtMontlyPayment.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtMontlyPayment.BorderRadius = 0;
+            this.txtMontlyPayment.BorderSize = 2;
+            this.txtMontlyPayment.Enabled = false;
+            this.txtMontlyPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMontlyPayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtMontlyPayment.Location = new System.Drawing.Point(199, 205);
+            this.txtMontlyPayment.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMontlyPayment.Multiline = true;
+            this.txtMontlyPayment.Name = "txtMontlyPayment";
+            this.txtMontlyPayment.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtMontlyPayment.PasswordChar = false;
+            this.txtMontlyPayment.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtMontlyPayment.PlaceholderText = "";
+            this.txtMontlyPayment.Size = new System.Drawing.Size(125, 32);
+            this.txtMontlyPayment.TabIndex = 5;
+            this.txtMontlyPayment.Texts = "";
+            this.txtMontlyPayment.UnderlinedStyle = false;
+            this.txtMontlyPayment._TextChanged += new System.EventHandler(this.txtMontlyPayment__TextChanged);
+            this.txtMontlyPayment.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMontlyPayment_KeyPress);
+            // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -215,34 +256,6 @@ namespace Lems.Forms
             this.label4.TabIndex = 0;
             this.label4.Text = "Give (Flat / Room) No. :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 162);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(189, 39);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Amount Per Month :";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 201);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(189, 40);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Amount Per Year :";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label7
             // 
@@ -349,57 +362,6 @@ namespace Lems.Forms
             this.txtACNumber.Texts = "";
             this.txtACNumber.UnderlinedStyle = false;
             // 
-            // txtMontlyPayment
-            // 
-            this.txtMontlyPayment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtMontlyPayment.BackColor = System.Drawing.SystemColors.Window;
-            this.txtMontlyPayment.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtMontlyPayment.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtMontlyPayment.BorderRadius = 0;
-            this.txtMontlyPayment.BorderSize = 2;
-            this.txtMontlyPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMontlyPayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtMontlyPayment.Location = new System.Drawing.Point(199, 166);
-            this.txtMontlyPayment.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMontlyPayment.Multiline = true;
-            this.txtMontlyPayment.Name = "txtMontlyPayment";
-            this.txtMontlyPayment.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtMontlyPayment.PasswordChar = false;
-            this.txtMontlyPayment.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtMontlyPayment.PlaceholderText = "";
-            this.txtMontlyPayment.Size = new System.Drawing.Size(125, 31);
-            this.txtMontlyPayment.TabIndex = 4;
-            this.txtMontlyPayment.Texts = "";
-            this.txtMontlyPayment.UnderlinedStyle = false;
-            this.txtMontlyPayment._TextChanged += new System.EventHandler(this.txtMontlyPayment__TextChanged);
-            this.txtMontlyPayment.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMontlyPayment_KeyPress);
-            // 
-            // txtYearlyPayment
-            // 
-            this.txtYearlyPayment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtYearlyPayment.BackColor = System.Drawing.SystemColors.Window;
-            this.txtYearlyPayment.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtYearlyPayment.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtYearlyPayment.BorderRadius = 0;
-            this.txtYearlyPayment.BorderSize = 2;
-            this.txtYearlyPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtYearlyPayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtYearlyPayment.Location = new System.Drawing.Point(199, 205);
-            this.txtYearlyPayment.Margin = new System.Windows.Forms.Padding(4);
-            this.txtYearlyPayment.Multiline = true;
-            this.txtYearlyPayment.Name = "txtYearlyPayment";
-            this.txtYearlyPayment.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtYearlyPayment.PasswordChar = false;
-            this.txtYearlyPayment.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtYearlyPayment.PlaceholderText = "";
-            this.txtYearlyPayment.Size = new System.Drawing.Size(125, 32);
-            this.txtYearlyPayment.TabIndex = 5;
-            this.txtYearlyPayment.Texts = "";
-            this.txtYearlyPayment.UnderlinedStyle = false;
-            this.txtYearlyPayment.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtYearlyPayment_KeyPress);
-            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -478,6 +440,46 @@ namespace Lems.Forms
             this.txtGeneralRemarks.TabIndex = 7;
             this.txtGeneralRemarks.Texts = "";
             this.txtGeneralRemarks.UnderlinedStyle = false;
+            // 
+            // txtYearlyPayment
+            // 
+            this.txtYearlyPayment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtYearlyPayment.BackColor = System.Drawing.SystemColors.Window;
+            this.txtYearlyPayment.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtYearlyPayment.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtYearlyPayment.BorderRadius = 0;
+            this.txtYearlyPayment.BorderSize = 2;
+            this.txtYearlyPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtYearlyPayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtYearlyPayment.Location = new System.Drawing.Point(199, 166);
+            this.txtYearlyPayment.Margin = new System.Windows.Forms.Padding(4);
+            this.txtYearlyPayment.Multiline = true;
+            this.txtYearlyPayment.Name = "txtYearlyPayment";
+            this.txtYearlyPayment.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtYearlyPayment.PasswordChar = false;
+            this.txtYearlyPayment.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtYearlyPayment.PlaceholderText = "";
+            this.txtYearlyPayment.Size = new System.Drawing.Size(125, 31);
+            this.txtYearlyPayment.TabIndex = 4;
+            this.txtYearlyPayment.Texts = "";
+            this.txtYearlyPayment.UnderlinedStyle = false;
+            this.txtYearlyPayment._TextChanged += new System.EventHandler(this.txtYearlyPayment__TextChanged);
+            this.txtYearlyPayment.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtYearlyPayment_KeyPress);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(3, 201);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(189, 40);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Amount Per Month :";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // errorProvider1
             // 

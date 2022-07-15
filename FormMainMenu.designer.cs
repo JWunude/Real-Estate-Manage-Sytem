@@ -73,8 +73,9 @@ namespace Lems
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(334, 1139);
+            this.panelMenu.Size = new System.Drawing.Size(250, 862);
             this.panelMenu.TabIndex = 0;
             // 
             // btnSignOut
@@ -89,10 +90,11 @@ namespace Lems
             this.btnSignOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSignOut.IconSize = 32;
             this.btnSignOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSignOut.Location = new System.Drawing.Point(0, 1079);
+            this.btnSignOut.Location = new System.Drawing.Point(0, 813);
+            this.btnSignOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSignOut.Name = "btnSignOut";
-            this.btnSignOut.Padding = new System.Windows.Forms.Padding(10, 0, 0, 15);
-            this.btnSignOut.Size = new System.Drawing.Size(334, 60);
+            this.btnSignOut.Padding = new System.Windows.Forms.Padding(8, 0, 0, 12);
+            this.btnSignOut.Size = new System.Drawing.Size(250, 49);
             this.btnSignOut.TabIndex = 8;
             this.btnSignOut.Tag = "SignOut";
             this.btnSignOut.Text = "About";
@@ -112,10 +114,11 @@ namespace Lems
             this.btnAbout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAbout.IconSize = 32;
             this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbout.Location = new System.Drawing.Point(0, 474);
+            this.btnAbout.Location = new System.Drawing.Point(0, 387);
+            this.btnAbout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnAbout.Size = new System.Drawing.Size(334, 60);
+            this.btnAbout.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.btnAbout.Size = new System.Drawing.Size(250, 49);
             this.btnAbout.TabIndex = 7;
             this.btnAbout.Tag = "About";
             this.btnAbout.Text = "About";
@@ -136,10 +139,11 @@ namespace Lems
             this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSettings.IconSize = 32;
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(0, 414);
+            this.btnSettings.Location = new System.Drawing.Point(0, 338);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnSettings.Size = new System.Drawing.Size(334, 60);
+            this.btnSettings.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.btnSettings.Size = new System.Drawing.Size(250, 49);
             this.btnSettings.TabIndex = 6;
             this.btnSettings.Tag = "Settings";
             this.btnSettings.Text = "Settings";
@@ -160,10 +164,11 @@ namespace Lems
             this.btnAccomodation.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAccomodation.IconSize = 32;
             this.btnAccomodation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccomodation.Location = new System.Drawing.Point(0, 354);
+            this.btnAccomodation.Location = new System.Drawing.Point(0, 289);
+            this.btnAccomodation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAccomodation.Name = "btnAccomodation";
-            this.btnAccomodation.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnAccomodation.Size = new System.Drawing.Size(334, 60);
+            this.btnAccomodation.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.btnAccomodation.Size = new System.Drawing.Size(250, 49);
             this.btnAccomodation.TabIndex = 5;
             this.btnAccomodation.Tag = "Accomodation";
             this.btnAccomodation.Text = "Accomodation";
@@ -184,10 +189,11 @@ namespace Lems
             this.btnRentageInfo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRentageInfo.IconSize = 32;
             this.btnRentageInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRentageInfo.Location = new System.Drawing.Point(0, 294);
+            this.btnRentageInfo.Location = new System.Drawing.Point(0, 240);
+            this.btnRentageInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRentageInfo.Name = "btnRentageInfo";
-            this.btnRentageInfo.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnRentageInfo.Size = new System.Drawing.Size(334, 60);
+            this.btnRentageInfo.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.btnRentageInfo.Size = new System.Drawing.Size(250, 49);
             this.btnRentageInfo.TabIndex = 4;
             this.btnRentageInfo.Tag = "Rentage";
             this.btnRentageInfo.Text = "Rentage";
@@ -208,10 +214,11 @@ namespace Lems
             this.btnTenantInfo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTenantInfo.IconSize = 32;
             this.btnTenantInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTenantInfo.Location = new System.Drawing.Point(0, 234);
+            this.btnTenantInfo.Location = new System.Drawing.Point(0, 191);
+            this.btnTenantInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTenantInfo.Name = "btnTenantInfo";
-            this.btnTenantInfo.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnTenantInfo.Size = new System.Drawing.Size(334, 60);
+            this.btnTenantInfo.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.btnTenantInfo.Size = new System.Drawing.Size(250, 49);
             this.btnTenantInfo.TabIndex = 3;
             this.btnTenantInfo.Tag = "Tenant";
             this.btnTenantInfo.Text = "Tenant Info";
@@ -232,10 +239,11 @@ namespace Lems
             this.btnProperty.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProperty.IconSize = 32;
             this.btnProperty.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProperty.Location = new System.Drawing.Point(0, 174);
+            this.btnProperty.Location = new System.Drawing.Point(0, 142);
+            this.btnProperty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnProperty.Name = "btnProperty";
-            this.btnProperty.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnProperty.Size = new System.Drawing.Size(334, 60);
+            this.btnProperty.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.btnProperty.Size = new System.Drawing.Size(250, 49);
             this.btnProperty.TabIndex = 2;
             this.btnProperty.Tag = "Property";
             this.btnProperty.Text = "Property Catelog";
@@ -256,10 +264,11 @@ namespace Lems
             this.btnDashbord.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDashbord.IconSize = 32;
             this.btnDashbord.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashbord.Location = new System.Drawing.Point(0, 114);
+            this.btnDashbord.Location = new System.Drawing.Point(0, 93);
+            this.btnDashbord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDashbord.Name = "btnDashbord";
-            this.btnDashbord.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnDashbord.Size = new System.Drawing.Size(334, 60);
+            this.btnDashbord.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.btnDashbord.Size = new System.Drawing.Size(250, 49);
             this.btnDashbord.TabIndex = 1;
             this.btnDashbord.Tag = "Dasbord";
             this.btnDashbord.Text = "Dasbord";
@@ -274,8 +283,9 @@ namespace Lems
             this.panelLogo.Controls.Add(this.btnHome);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(334, 114);
+            this.panelLogo.Size = new System.Drawing.Size(250, 93);
             this.panelLogo.TabIndex = 0;
             // 
             // btnMenu
@@ -288,10 +298,11 @@ namespace Lems
             this.btnMenu.IconColor = System.Drawing.Color.White;
             this.btnMenu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMenu.IconSize = 32;
-            this.btnMenu.Location = new System.Drawing.Point(202, 3);
+            this.btnMenu.Location = new System.Drawing.Point(152, 2);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnMenu.Size = new System.Drawing.Size(124, 108);
+            this.btnMenu.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.btnMenu.Size = new System.Drawing.Size(93, 88);
             this.btnMenu.TabIndex = 2;
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -301,9 +312,10 @@ namespace Lems
             // btnHome
             // 
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.Location = new System.Drawing.Point(28, 3);
+            this.btnHome.Location = new System.Drawing.Point(21, 2);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(154, 101);
+            this.btnHome.Size = new System.Drawing.Size(116, 82);
             this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnHome.TabIndex = 0;
             this.btnHome.TabStop = false;
@@ -314,16 +326,18 @@ namespace Lems
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(334, 66);
+            this.panelDesktop.Location = new System.Drawing.Point(250, 54);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1297, 1073);
+            this.panelDesktop.Size = new System.Drawing.Size(973, 808);
             this.panelDesktop.TabIndex = 3;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(404, 304);
+            this.pictureBox1.Location = new System.Drawing.Point(303, 215);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(550, 550);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -337,10 +351,11 @@ namespace Lems
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.IconSize = 35;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(18, 20);
+            this.iconCurrentChildForm.IconSize = 24;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(14, 16);
+            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(32, 32);
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(24, 26);
             this.iconCurrentChildForm.TabIndex = 0;
             this.iconCurrentChildForm.TabStop = false;
             this.iconCurrentChildForm.Click += new System.EventHandler(this.iconCurrentChildForm_Click);
@@ -350,9 +365,10 @@ namespace Lems
             this.lblTitleChildForm.AutoSize = true;
             this.lblTitleChildForm.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitleChildForm.ForeColor = System.Drawing.Color.MediumBlue;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(56, 23);
+            this.lblTitleChildForm.Location = new System.Drawing.Point(42, 19);
+            this.lblTitleChildForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(81, 29);
+            this.lblTitleChildForm.Size = new System.Drawing.Size(52, 18);
             this.lblTitleChildForm.TabIndex = 1;
             this.lblTitleChildForm.Text = "Home";
             // 
@@ -365,12 +381,13 @@ namespace Lems
             this.btnMinimize.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimize.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnMinimize.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
-            this.btnMinimize.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnMinimize.IconColor = System.Drawing.Color.GhostWhite;
             this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMinimize.IconSize = 25;
-            this.btnMinimize.Location = new System.Drawing.Point(1207, 3);
+            this.btnMinimize.Location = new System.Drawing.Point(905, 2);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(25, 25);
+            this.btnMinimize.Size = new System.Drawing.Size(19, 20);
             this.btnMinimize.TabIndex = 2;
             this.btnMinimize.UseVisualStyleBackColor = true;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
@@ -384,12 +401,13 @@ namespace Lems
             this.btnMaximize.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaximize.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.btnMaximize.IconColor = System.Drawing.Color.RoyalBlue;
+            this.btnMaximize.IconColor = System.Drawing.Color.AliceBlue;
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMaximize.IconSize = 25;
-            this.btnMaximize.Location = new System.Drawing.Point(1238, 3);
+            this.btnMaximize.Location = new System.Drawing.Point(928, 2);
+            this.btnMaximize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(25, 25);
+            this.btnMaximize.Size = new System.Drawing.Size(19, 20);
             this.btnMaximize.TabIndex = 3;
             this.btnMaximize.UseVisualStyleBackColor = true;
             this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
@@ -403,41 +421,44 @@ namespace Lems
             this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
-            this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(74)))), ((int)(((byte)(230)))));
+            this.btnExit.IconColor = System.Drawing.Color.WhiteSmoke;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 25;
-            this.btnExit.Location = new System.Drawing.Point(1269, 3);
+            this.btnExit.Location = new System.Drawing.Point(952, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(25, 25);
+            this.btnExit.Size = new System.Drawing.Size(19, 20);
             this.btnExit.TabIndex = 4;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // panelTitleBar
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.White;
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
             this.panelTitleBar.Controls.Add(this.btnExit);
             this.panelTitleBar.Controls.Add(this.btnMaximize);
             this.panelTitleBar.Controls.Add(this.btnMinimize);
             this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
             this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(334, 0);
+            this.panelTitleBar.Location = new System.Drawing.Point(250, 0);
+            this.panelTitleBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(1297, 66);
+            this.panelTitleBar.Size = new System.Drawing.Size(973, 54);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitleBar_Paint);
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
             // FormMainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.ClientSize = new System.Drawing.Size(1631, 1139);
+            this.ClientSize = new System.Drawing.Size(1223, 862);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormMainMenu";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using FontAwesome.Sharp;
+using Lems.Forms;
+using System;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using FontAwesome.Sharp;
-using Lems.Forms;
 
 namespace Lems
 {
@@ -110,7 +105,7 @@ namespace Lems
         private void btnDashbord_Click(object sender, EventArgs e)
         {
             //ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new SummaryDashboard());
+            OpenChildForm(new FormDashboard());
         }
 
         private void btnProperty_Click(object sender, EventArgs e)
@@ -178,9 +173,6 @@ namespace Lems
         protected override void WndProc(ref Message m)
         {
             const int WM_NCCALCSIZE = 0x0083;//Standar Title Bar - Snap Window
-            const int WM_SYSCOMMAND = 0x0112;
-            const int SC_MINIMIZE = 0xF020; //Minimize form (Before)
-            const int SC_RESTORE = 0xF120; //Restore form (Before)
             const int WM_NCHITTEST = 0x0084;//Win32, Mouse Input Notification: Determine what part of the window corresponds to a point, allows to resize the form.
             const int resizeAreaSize = 10;
 

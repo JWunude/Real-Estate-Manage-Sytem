@@ -43,8 +43,6 @@ namespace Lems.Forms
             this.btnAddNew = new FontAwesome.Sharp.IconButton();
             this.lblPID = new System.Windows.Forms.Label();
             this.dgvDisplayAccomodation = new System.Windows.Forms.DataGridView();
-            this.txtSearch = new RJCodeAdvance.RJControls.RJTextBox();
-            this.btnSearch = new FontAwesome.Sharp.IconButton();
             this.RecID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +54,8 @@ namespace Lems.Forms
             this.Remarks = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnDelete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.txtSearch = new RJCodeAdvance.RJControls.RJTextBox();
+            this.btnSearch = new FontAwesome.Sharp.IconButton();
             this.panelTop.SuspendLayout();
             this.panelDisplayProperty.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisplayAccomodation)).BeginInit();
@@ -96,7 +96,7 @@ namespace Lems.Forms
             this.btnExit.IconColor = System.Drawing.Color.Silver;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 30;
-            this.btnExit.Location = new System.Drawing.Point(1404, 15);
+            this.btnExit.Location = new System.Drawing.Point(1404, 2);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(36, 36);
@@ -202,50 +202,6 @@ namespace Lems.Forms
             this.dgvDisplayAccomodation.Size = new System.Drawing.Size(1380, 685);
             this.dgvDisplayAccomodation.TabIndex = 2;
             this.dgvDisplayAccomodation.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDisplayAccomodation_CellClick);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.BackColor = System.Drawing.SystemColors.Window;
-            this.txtSearch.BorderColor = System.Drawing.Color.Indigo;
-            this.txtSearch.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtSearch.BorderRadius = 0;
-            this.txtSearch.BorderSize = 2;
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtSearch.Location = new System.Drawing.Point(998, 19);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSearch.Multiline = false;
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSearch.PasswordChar = false;
-            this.txtSearch.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSearch.PlaceholderText = "";
-            this.txtSearch.Size = new System.Drawing.Size(354, 35);
-            this.txtSearch.TabIndex = 1;
-            this.txtSearch.Texts = "";
-            this.txtSearch.UnderlinedStyle = false;
-            this.txtSearch._TextChanged += new System.EventHandler(this.txtSearch__TextChanged);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearch.BackColor = System.Drawing.Color.White;
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.Indigo;
-            this.btnSearch.FlatAppearance.BorderSize = 2;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.Indigo;
-            this.btnSearch.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.btnSearch.IconColor = System.Drawing.Color.Indigo;
-            this.btnSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSearch.IconSize = 35;
-            this.btnSearch.Location = new System.Drawing.Point(1349, 19);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(40, 35);
-            this.btnSearch.TabIndex = 0;
-            this.btnSearch.UseVisualStyleBackColor = false;
             // 
             // RecID
             // 
@@ -361,6 +317,50 @@ namespace Lems.Forms
             this.btnDelete.Text = "Delete";
             this.btnDelete.ToolTipText = "Click to Delete selected record";
             this.btnDelete.UseColumnTextForButtonValue = true;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.BackColor = System.Drawing.SystemColors.Window;
+            this.txtSearch.BorderColor = System.Drawing.Color.Indigo;
+            this.txtSearch.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtSearch.BorderRadius = 0;
+            this.txtSearch.BorderSize = 2;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSearch.Location = new System.Drawing.Point(998, 19);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearch.Multiline = false;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSearch.PasswordChar = false;
+            this.txtSearch.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSearch.PlaceholderText = "";
+            this.txtSearch.Size = new System.Drawing.Size(354, 35);
+            this.txtSearch.TabIndex = 1;
+            this.txtSearch.Texts = "";
+            this.txtSearch.UnderlinedStyle = false;
+            this.txtSearch._TextChanged += new System.EventHandler(this.txtSearch__TextChanged);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearch.BackColor = System.Drawing.Color.White;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.Indigo;
+            this.btnSearch.FlatAppearance.BorderSize = 2;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.Indigo;
+            this.btnSearch.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnSearch.IconColor = System.Drawing.Color.Indigo;
+            this.btnSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSearch.IconSize = 35;
+            this.btnSearch.Location = new System.Drawing.Point(1349, 19);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(40, 35);
+            this.btnSearch.TabIndex = 0;
+            this.btnSearch.UseVisualStyleBackColor = false;
             // 
             // MaangeAccomodationInfo
             // 
